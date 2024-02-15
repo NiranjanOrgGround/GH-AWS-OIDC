@@ -30,3 +30,5 @@ jobs:
         run: |
           aws ec2 describe-security-groups \
           --group-ids 	sg-07cd886d08e2781a8
+      - name: List the buckets
+        run: aws s3 ls
